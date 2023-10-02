@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: rgb(100, 94, 94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    
+}
+
+#calculadora{
+    width: 400px;
+    padding: 0.5em;
+    background-color: rgb(33, 53, 53);
+    display: flex;
+    flex-direction: column;
+}
+
+#calculadora h3{
+    font-size: 30px;
+    font-weight: 300;
+    color:rgb(255, 244, 244);
+}
+
+#operaçoes{
+    text-align: right;
+    color: rgb(253, 248, 248);
+}
+
+#previa_operadores{
+    padding: 0.2;
+    font-size: 3em;
+    color:rgb(216, 194, 194);
+    overflow-wrap: break-word;
+}
+
+#operadores_atual{
+    font-size:3em;
+    font-weight: 700;
+    min-height: 1.6em;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+#botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    
+}
+
+#botoes button{
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: rgba(195, 212, 203, 0.89);
+    color: rgba(255, 246, 246, 0.877);
+
+}
+
+#botoes .numero{
+    background-color: rgb(111, 129, 129);
+    color: rgb(240, 230, 230);
+}
+
+#botoes button:hover{
+    background-color:rgba(128, 113, 113, 0.418) ;
+    border-color: rgb(19, 19, 17);
+}
+
+#botoes #igual{
+    grid-column: span 2;
+    background-color: rgb(213, 213, 231);
+}
+
+#botoes #igual:hover{
+    grid-column: span 2;
+    background-color: rgb(174, 201, 192);
+}
