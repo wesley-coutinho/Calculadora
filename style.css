@@ -48,14 +48,14 @@ body{
     overflow-wrap: break-word;
 }
 
-#botoes{
+#botao{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 3px;
     
 }
 
-#botoes button{
+#botao button{
     border: 1px solid transparent;
     border-radius: 0;
     height: 4em;
@@ -66,22 +66,22 @@ body{
 
 }
 
-#botoes .numero{
+#botao .numero{
     background-color: rgb(111, 129, 129);
     color: rgb(240, 230, 230);
 }
 
-#botoes button:hover{
+#botao button:hover{
     background-color:rgba(128, 113, 113, 0.418) ;
     border-color: rgb(19, 19, 17);
 }
 
-#botoes #igual{
+#botao #igual{
     grid-column: span 2;
     background-color: rgb(213, 213, 231);
 }
 
-#botoes #igual:hover{
+#botao #igual:hover{
     grid-column: span 2;
     background-color: rgb(174, 201, 192);
 }
